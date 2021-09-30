@@ -13,6 +13,12 @@
 * Added product functions (incomplete)
 * Revised purpose and product scope sections
 
+# URS Changelog
+### 30/09/2021
+* URS document created
+* Defined users
+* Defined user requirements
+
 # Risk Management Changelog
 ### 14/09/2021
 * Risk Management document created
