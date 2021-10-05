@@ -47,3 +47,8 @@
 * Added table of resolved risks and mitigation strategies
 * Added additional risks
 * Refined ambiguous risks
+
+## Version 0.2
+### 03/10/2021
+* Updated top ten risk list and resolved risks
+* Completed draft of sections: Introduction, Risk Management Procedures
