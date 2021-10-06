@@ -1,0 +1,98 @@
+/* Global view aka Desktop View*/
+body{
+    background-image: linear-gradient(white,blue);
+}
+.container{
+    background-color: rgb(43,226,147);
+    min-height: 520px; 
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+nav{
+    min-height: 50px;
+}
+ul.navbar{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    overflow: hidden;
+}
+ul.navbar li{
+    display: inline;
+    margin: 5px;
+    float: right;
+    text-align: center;
+    position: relative;
+    
+}
+.navbar li a,.dropbtn{
+    text-decoration: none;
+    display:inline-block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    font-weight: bold;
+    font-size: 1rem;
+
+}
+li.dropdown{
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }/*shows how the dropdown-content would appear on screen once mouse hovers*/
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: right;
+  } /*styling of the links in the dropdown content*/
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}/*the links in the dropdown-content is beige when the mouse hovers over it*/
+
+.dropdown:hover .dropdown-content {
+    display: block;
+  }  /*when the About link is hovered the dropdown-content is displayed as a block*/
+li a:hover, .dropdown:hover .dropbtn{
+    background-color: #555;
+    
+}/*link turns grey when mouse hovers over it*/
+li a:active{
+    background-color: blueviolet;
+}
+
+/*link turns blueviolet when it is clicked */
+
+
+
+/*Tablet view*/
+@media(max-width:768px){
+
+
+}
+
+
+
+/* Mobile View*/
+@media(max-width:360px){
+ul.navbar li{
+    display: block;
+    margin: 5px;
+    color:aqua;
+    padding: 8px 16px;
+    text-decoration: none;
+        
+}
+
+}
