@@ -1,6 +1,7 @@
 /* Global view aka Desktop View*/
 body{
     background-image: linear-gradient(white,blue);
+    
 }
 .container{
     background-color: rgb(43,226,147);
@@ -22,11 +23,10 @@ ul.navbar{
     overflow: hidden;
 }
 ul.navbar li{
-    display: inline;
+    display: inline; 
     margin: 5px;
     float: right;
     text-align: center;
-    position: relative;
     
 }
 .navbar li a,.dropbtn{
@@ -49,6 +49,9 @@ li.dropdown{
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
+    right: 0;
+    
+    
   }/*shows how the dropdown-content would appear on screen once mouse hovers*/
 .dropdown-content a {
     color: black;
@@ -57,13 +60,14 @@ li.dropdown{
     display: block;
     text-align: right;
   } /*styling of the links in the dropdown content*/
+.dropdown:hover .dropdown-content {
+    display: block;
+  }  /*when the About link is hovered the dropdown-content is displayed as a block*/
 .dropdown-content a:hover {
     background-color: #f1f1f1;
 }/*the links in the dropdown-content is beige when the mouse hovers over it*/
 
-.dropdown:hover .dropdown-content {
-    display: block;
-  }  /*when the About link is hovered the dropdown-content is displayed as a block*/
+
 li a:hover, .dropdown:hover .dropbtn{
     background-color: #555;
     
@@ -74,7 +78,9 @@ li a:active{
 
 /*link turns blueviolet when it is clicked */
 
-
+main{
+    display: flex;
+}
 
 /*Tablet view*/
 @media(max-width:768px){
