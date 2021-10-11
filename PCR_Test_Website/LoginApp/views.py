@@ -15,6 +15,8 @@ x = 1
 
 
 def login_page(request):
+    ty=4
+    z=66
     return render(request,'LoginPage.html',{'Proof':x})
 
 def about_page(request):

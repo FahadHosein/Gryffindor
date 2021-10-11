@@ -17,11 +17,14 @@ from django.contrib import admin
 from django.urls import path, include
 from django.http import HttpResponse
 
+import debug_toolbar
+
 def home_page(request):
     return HttpResponse("This is the home page")
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', home_page,name="Home Page"),
-    path('login/',include('LoginApp.urls')),
+    path('',include('LoginApp.urls')),
+    path('__debug__/', include(debug_toolbar.urls)),
 ]

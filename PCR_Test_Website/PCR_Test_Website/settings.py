@@ -33,12 +33,13 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',  # admin interface for managing data
-    'django.contrib.auth', # authenticating users
+    'django.contrib.admin',         # admin interface for managing data
+    'django.contrib.auth',          # authenticating users
     'django.contrib.contenttypes',
-    'django.contrib.messages', # displaying One time notifications to user
-    'django.contrib.staticfiles', # serving static files like html, css and images
-    'LoginApp' # Our website login component defined in the LoginApp Folder
+    'django.contrib.messages',      # displaying One time notifications to user
+    'django.contrib.staticfiles',   # serving static files like html, css and images
+    'LoginApp',                     # Our website login component defined in the LoginApp Folder
+    'debug_toolbar'                 # Web based debugger
 ]
 
 MIDDLEWARE = [
@@ -49,6 +50,7 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
 ]
 
 ROOT_URLCONF = 'PCR_Test_Website.urls'
@@ -81,6 +83,12 @@ DATABASES = {
         'NAME': BASE_DIR / 'db.sqlite3',
     }
 }
+
+INTERNAL_IPS = [
+    # ...
+    '127.0.0.1',
+    # ...
+]
 
 
 # Password validation
