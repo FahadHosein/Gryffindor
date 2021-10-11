@@ -1,3 +1,4 @@
+
 """
 Django settings for PCR_Test_Website project.
 
@@ -15,6 +16,7 @@ from pathlib import Path
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
+# Defines how the admin interface for this app is gonna look like 
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.2/howto/deployment/checklist/
@@ -31,12 +33,12 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    'django.contrib.admin',
-    'django.contrib.auth',
+    'django.contrib.admin',  # admin interface for managing data
+    'django.contrib.auth', # authenticating users
     'django.contrib.contenttypes',
-    'django.contrib.sessions',
-    'django.contrib.messages',
-    'django.contrib.staticfiles',
+    'django.contrib.messages', # displaying One time notifications to user
+    'django.contrib.staticfiles', # serving static files like html, css and images
+    'LoginApp' # Our website login component defined in the LoginApp Folder
 ]
 
 MIDDLEWARE = [
