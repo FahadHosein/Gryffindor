@@ -17,7 +17,7 @@ x = 1
 def login_page(request):
     ty=4
     z=66
-    return render(request,'LoginPage.html',{'Proof':x})
+    return render(request,'LoginPage.html',{'Proof1':x,'Proof2':ty,'Proof3':z})
 
 def about_page(request):
     return render(request,'AboutPage.html')
