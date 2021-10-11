@@ -52,3 +52,8 @@
 ### 03/10/2021
 * Updated top ten risk list and resolved risks
 * Completed draft of sections: Introduction, Risk Management Procedures
+
+# Top 10 Risk List Changelog
+## Version 0.0
+### 03/10/2021
+* Migrated top ten risk list from risk management document to its own document
