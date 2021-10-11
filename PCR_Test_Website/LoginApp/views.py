@@ -20,4 +20,4 @@ def login_page(request):
     return render(request,'LoginPage.html',{'Proof':x})
 
 def about_page(request):
-    return HttpResponse('About Page')
+    return render(request,'AboutPage.html')

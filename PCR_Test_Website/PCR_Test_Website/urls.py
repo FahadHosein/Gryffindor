@@ -24,7 +24,7 @@ def home_page(request):
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path('__debug__/', include(debug_toolbar.urls)),
     path('', home_page,name="Home Page"),
     path('',include('LoginApp.urls')),
-    path('__debug__/', include(debug_toolbar.urls)),
 ]
