@@ -1,0 +1,10 @@
+{%extends "login/sitebase.html" %}
+
+{% block content %}  
+{% for appt in appt%}
+<h3> View results on this page, this is an html file.</h3>
+
+<p> A  {{ appt.fname }}  B  </p>
+<p>  A {{ appt.lname }}  B  </p>
+{% endfor %}
+{% endblock content %} 
