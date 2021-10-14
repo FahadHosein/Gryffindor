@@ -53,6 +53,12 @@
 * Updated top ten risk list and resolved risks
 * Completed draft of sections: Introduction, Risk Management Procedures
 
+## Version 1.0
+### 05/10/2021
+* Removed top ten risk list from document and added it to a separate document
+* Added risk exposure values
+* Added additional risks
+
 # Top 10 Risk List Changelog
 ## Version 0.0
 ### 03/10/2021
