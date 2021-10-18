@@ -59,6 +59,10 @@
 * Added risk exposure values
 * Added additional risks
 
+## Version 1.1
+### 10/10/2021
+* Added priorities to risk identification list for clarity
+
 # Top 10 Risk List Changelog
 ## Week 3
 ### 03/10/2021
