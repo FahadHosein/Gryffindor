@@ -60,6 +60,14 @@
 * Added additional risks
 
 # Top 10 Risk List Changelog
-## Version 0.0
+## Week 3
 ### 03/10/2021
 * Migrated top ten risk list from risk management document to its own document
+
+## Week 4
+### 11/10/2021
+* Updated top ten risk list for week 4
+
+## Week 5
+### 16/10/2021
+* Updated top ten risk list for week 5
