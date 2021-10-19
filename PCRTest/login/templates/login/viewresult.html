@@ -1,10 +1,14 @@
 {%extends "login/sitebase.html" %}
 
 {% block content %}  
+
+<h3> View results on this page, this is an html file. If there are no results here and even if there are , this is supposed to direct the user to book an appointment</h3>
+
 {% for appt in appt%}
-<h3> View results on this page, this is an html file.</h3>
 
 <p> A  {{ appt.fname }}  B  </p>
 <p>  A {{ appt.lname }}  B  </p>
 {% endfor %}
+
+
 {% endblock content %} 
