@@ -10,3 +10,12 @@ class UserRegistrationForm(UserCreationForm):
     class Meta:
         model = User
         fields = ['username','email','dob','password1','password2']
+
+
+class Appointment(UserCreationForm):
+    email = forms.EmailField()
+    dob = forms.DateField()
+
+    class Meta:
+        model = User
+        fields = ['username','email','dob','password1','password2']

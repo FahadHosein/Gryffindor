@@ -1,9 +1,25 @@
 
 {%extends "login/sitebase.html" %}
-
+{% load crispy_forms_tags %}
 {% block content %}  
 
 
 <h1> Book appointment on this page, this is an html file.</h1>
+
+
+<div class="content-section">
+    <form method="POST">
+        {% csrf_token %}
+        <fieldset class="form-group">
+            <legend class="border-bottom mb-4">  Book an Appointment </legend>
+            {{ form|crispy }}
+        </fieldset>
+        <div>
+            <button class="btn btn-outline-info" type="submit"> Book Appointment </button>
+        </div>
+    </form>    
+   
+</div>
+
 
 {% endblock content %}

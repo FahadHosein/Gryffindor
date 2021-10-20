@@ -43,6 +43,19 @@
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'bookappointment' %}" >Book an Appointment</a>
                   </li>
+                  {% if user.is_authenticated %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'redirlogout' %}" >Log Out</a>
+                  </li>
+                   
+                  {% else %}
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'sitehome' %}" >Create an Account</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'redirlogin' %}" >Log In</a>
+                  </li>
+                  {% endif %}
                 </ul>  
               </div>
             </div>

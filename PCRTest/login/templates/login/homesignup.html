@@ -2,6 +2,28 @@
 {% load crispy_forms_tags %}
 {% block content %}  
 
+
+{% if user.is_authenticated %}
+         
+<h1> You are already logged in.</h1>
+
+<div class="border-top pt-3">
+     
+    <a class="ml-2" href="{% url 'bookappointment' %}"> Click here to book an appointment </a>
+    
+</div>
+<div class="border-top pt-3">
+     
+    <a class="ml-2" href="{% url 'viewresult' %}"> Click here to view your results </a>
+    
+</div>
+<div class="border-top pt-3">
+     
+    <a class="ml-2" href="{% url 'redirlogout' %}"> Click here to log out of your account </a>
+    
+</div>
+
+{% else %}
 <h1> Create account on this page, this is an html file.</h1>
 
 <div class="content-section">
@@ -21,7 +43,8 @@
         </small>
     </div>
 </div>
-
+                  
+{% endif %}
 
 
 {% endblock content %}
