@@ -6,9 +6,28 @@
 
 {% for appt in appt%}
 
-<p> A  {{ appt.fname }}  B  </p>
-<p>  A {{ appt.lname }}  B  </p>
-{% endfor %}
+{% if user.id == appt.user_id	%}
 
+<p> Appointment for Mr./Mrs {{appt.fname}} {{appt.lname}} . When asked if they had covid in the past 6 months they said  {{appt.cov6}} </p>
+<p> When asked if they had heart problems and/or chest pains they said {{appt.heart}} and {{ appt.chestpa }} </p>
+<p> Their phone number is {{appt.phon}} and their emergency phone contact is {{appt.emephon}}</p>
+<p> Their appointment is scheduled for {{appt.appdatetime}}</p>
+
+{% if appt.test %}
+{% if appt.covnow %}
+<p> You  have the covid </p>
+{% else %}
+<p> You do not the covid </p>
+{% endif %}
+{% else %}
+<p> Your test results have not been released as yet </p>
+{% endif %}
+<p> -------------------------------------------------------------------- </p>
+
+{% else %}
+
+{% endif %}
+
+{% endfor %}
 
 {% endblock content %} 
