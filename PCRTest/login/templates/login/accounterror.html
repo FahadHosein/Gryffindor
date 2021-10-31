@@ -1,21 +1,30 @@
 {%extends "login/sitebase.html" %}
 
 {% block content %}  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Changed the Title to something more suitable-->
+    <title>Account Error</title>
+</head>
+
 <div class="container p-5 text-center">
-    <h1> Error - No account logon.</h1>
-    <h2> You need to be logged in to an account to perform the action you are trying to do.</h2>
+    <h1> Error - No Account Logon.</h1>
+    <h4 class="fw-light pt-4">You need to be logged in to an account to perform the action you are trying to do.</small></h4>
 </div>
+<div class="container">
+    <div class="border-top pt-3 text-center">
+        
+        <p><a class="ml-2 text-decoration-none" href="{% url 'sitehome' %}"> Click here </a> to create an account</p>
+        
+    </div>
 
-<div class="border-top pt-3">
-     
-    <a class="ml-2" href="{% url 'sitehome' %}"> Click here to create an account </a>
-    
-</div>
-
-<div class="border-top pt-3">
-     
-    <a class="ml-2" href="{% url 'redirlogin' %}"> Click here to sign in to your account </a>
-    
+    <div class="border-top border-bottom pt-2 text-center">
+        
+        </p><a class="ml-2 text-decoration-none" href="{% url 'redirlogin' %}"> Click here </a> to sign in to your account</p>
+        
+    </div>
 </div>
 
 {% endblock content %} 
+</html>
