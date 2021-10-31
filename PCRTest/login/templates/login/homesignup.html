@@ -24,23 +24,26 @@
 </div>
 
 {% else %}
-<h1> Create account on this page, this is an html file.</h1>
-
-<div class="content-section">
-    <form method="POST">
-        {% csrf_token %}
-        <fieldset class="form-group">
-            <legend class="border-bottom mb-4"> Make an account to Book an Appointment </legend>
-            {{ form|crispy }}
-        </fieldset>
-        <div>
-            <button class="btn btn-outline-info" type="submit"> Create Account </button>
+<div class="container text-center pt-3 pb-1">
+    <h1> Create an account</h1>
+</div> 
+<div class="container">
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group pt-3 pb-3">
+                <legend class="border-bottom mb-4"> Please make an account to Book an Appointment </legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="d-grid gap-2 col-6 mx-auto pt-3 pb-3">
+                <button class="btn btn-outline-info" type="submit"> Create Account </button>
+            </div>
+        </form>    
+        <div class="border-top pt-3">
+            <small class="text-muted pb-3"> 
+                <strong>Do you already have an account ? <a class="ml-2" href="{% url 'redirlogin' %}"> Sign In Here </a></strong>
+            </small>
         </div>
-    </form>    
-    <div class="border-top pt-3">
-        <small class="text-muted"> 
-            Do you already have an account ? <a class="ml-2" href="{% url 'redirlogin' %}"> Sign In Here </a>
-        </small>
     </div>
 </div>
                   

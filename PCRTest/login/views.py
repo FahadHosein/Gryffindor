@@ -56,3 +56,9 @@ def info(request):
 
 def accounterror(request):
     return render(request, 'login/accounterror.html')  
+
+def faq(request):
+    return render(request, 'login/faq.html')  
+
+def advisories(request):
+    return render(request, 'login/covidadvisories.html')  

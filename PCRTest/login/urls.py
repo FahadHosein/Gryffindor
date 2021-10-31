@@ -13,6 +13,8 @@ urlpatterns = [
     path('viewresult', ApptListView.as_view(), name='viewresult'),
     path('info/',views.info, name='info'),
     path('accounterror',views.accounterror, name='accounterror'),
+    path('faq', views.faq, name="faq_t"),
+    path('advisory', views.advisories, name='covidadvisory'),
 
 ]
 

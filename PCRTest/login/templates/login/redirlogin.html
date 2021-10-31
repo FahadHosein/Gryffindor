@@ -2,27 +2,28 @@
 {% load crispy_forms_tags %}
 {% block content %}  
 
-
-<h1> Login on this page, this is an html file.</h1>
-
-<div class="content-section">
-    <form method="POST">
-        {% csrf_token %}
-        <fieldset class="form-group">
-            <legend class="border-bottom mb-4"> Sign in to Book an Appointment </legend>
-            {{ form|crispy }}
-        </fieldset>
-        <div>
-            <button class="btn btn-outline-info" type="submit"> Sign In </button>
+<div class="container p-5 text-center">
+    <h1> Login </h1>
+</div>
+<div class="container">
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group">
+                <legend class="border-bottom mb-4"> Sign in to Book an Appointment </legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="d-grid gap-2 col-6 mx-auto pt-3 pb-3">
+                <button class="btn btn-outline-info" type="submit"> Sign In </button>
+            </div>
+        </form>    
+        <div class="border-top pt-3">
+            <small class="text-muted"> 
+                <strong> Need an account ? <a class="ml-2" href="{% url 'sitehome' %}"> Sign Up Here </a> </strong>
+            </small>
         </div>
-    </form>    
-    <div class="border-top pt-3">
-        <small class="text-muted"> 
-            Need an account ? <a class="ml-2" href="{% url 'sitehome' %}"> Sign Up Here </a>
-        </small>
     </div>
 </div>
-
 
 
 {% endblock content %} 
