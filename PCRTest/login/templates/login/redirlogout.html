@@ -2,20 +2,21 @@
 
 {% block content %}  
 
-<h2> You have been logged out</h2>
+<div class="container p-5">
+    <h2 class="text-center"> You have been logged out</h2>
 
-<div class="border-top pt-3">
-     
-    <a class="ml-2" href="{% url 'sitehome' %}"> Click here to create an account </a>
-    
+    <div class="border-top pt-3">
+        
+        <a class="ml-2" href="{% url 'sitehome' %}"> Click here to create an account </a>
+        
+    </div>
+
+    <div class="border-top pt-3">
+        
+        <a class="ml-2" href="{% url 'redirlogin' %}"> Click here to sign in to your account </a>
+        
+    </div>
 </div>
-
-<div class="border-top pt-3">
-     
-    <a class="ml-2" href="{% url 'redirlogin' %}"> Click here to sign in to your account </a>
-    
-</div>
-
 
 
 {% endblock content %} 
