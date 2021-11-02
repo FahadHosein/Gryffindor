@@ -19,3 +19,12 @@ of all appointments made . Dev plan as of right now is to get the appointment sy
 Additions were made to the `url.py` and `views.py` to accommodate the new pages.
 The About Us page, has a carousel which can be utilized in the future to contain anchor tags to take the user to various parts of the website. Currently the visiblity of the text is low due to the colours of the pictures and text, this would be changed in the future.
 The FAQ page has an accordion to be visually appealing and interactive to the user. 
+
+11/1/2021 - Jared - 1. The book appointment page has better headings for the form entry but still no calendar and clock to select the appointment time to request 
+                    2. THe user now "requests" an appointment instead of books it immediately from the website.
+                    3. The admin page is now easier to use and makes more sense for the staff/admin user trying to operate the website. Now the staff or admin will have to
+                    select the appoiintment and manually check whether or not the appointment has been denied or accpeted ,then if the test results are ready or not, then if the 
+                    results are positivbe or not the website will indicate that , in the future , the website will not show this info , an email will be sent to the user on the 
+                    email they selected of their results.
+                    4. Split appointment date and time into two seperate data entry fields in the appointment request form
+                    
