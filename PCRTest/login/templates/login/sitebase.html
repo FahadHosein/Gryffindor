@@ -26,9 +26,13 @@
                   <li class="nav-item">
                     <a class="nav-link" aria-current="page" href="{% url 'sitehome' %}">Home</a>
                   </li><!--link for a nav item that is a list element -->
+
+                  <!--
                   <li class="nav-item justify-content-end">
                     <a class="nav-link" href="#">Appointment Calendar</a>
                   </li>
+                  -->
+
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       About
@@ -43,6 +47,11 @@
                     <a class="nav-link" href="{% url 'bookappointment' %}" >Book an Appointment</a>
                   </li>
                   {% if user.is_authenticated %}
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="{% url 'viewresult' %}" >View Your Results</a>
+                  </li>
+
                   <li class="nav-item">
                     <a class="nav-link" href="{% url 'redirlogout' %}" >Log Out</a>
                   </li>

@@ -15,17 +15,43 @@
     <p> Appointment for Mr./Mrs {{appt.fname}} {{appt.lname}} . When asked if they had covid in the past 6 months they said  {{appt.cov6}} </p>
     <p> When asked if they had heart problems and/or chest pains they said {{appt.heart}} and {{ appt.chestpa }} </p>
     <p> Their phone number is {{appt.phon}} and their emergency phone contact is {{appt.emephon}}</p>
-    <p> Their appointment is scheduled for {{appt.appdatetime}}</p>
 
-    {% if appt.test %}
-    {% if appt.covnow %}
-    <p> You  have the covid </p>
+    {% if appt.apprequest %}
+
+    {% if appt.appconfirmed %}
+
+    {% if appt.tested %}
+
+    {% if appt.result %}
+
+    Your results are ready and have been delivered to {{ user.email }}
+
     {% else %}
-    <p> You do not the covid </p>
+
+    <p>We are sorry but your results are not ready yet.  </p>
+
     {% endif %}
+
     {% else %}
-    <p> Your test results have not been released as yet </p>
+    <p> Your appointment has been confirmed and is scheduled for {{appt.appdate}} at {{appt.apptime}} </p> 
     {% endif %}
+
+    {% else %}
+    <p>  We are sorry but your appointment has been denied</p>
+    {% endif %}
+
+    {% else %}
+    <p> Your appointment has not yet been confirmed</p>
+    {% endif %}
+
+
+
+
+
+
+    
+
+    
     <p> -------------------------------------------------------------------- </p>
 
     {% else %}

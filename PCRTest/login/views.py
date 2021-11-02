@@ -34,7 +34,7 @@ class ApptListView(ListView):
 @method_decorator(login_required, name='dispatch')
 class ApptCreateView(CreateView):
     model = appt
-    fields = [ 'fname', 'lname','cov6','heart','chestpa','phon','emephon','appdatetime']
+    fields = [ 'fname', 'lname','cov6','heart','chestpa','phon','emephon','appdate','apptime' ]
     template_name = 'login/bookappointment.html'
     success_url = 'viewresult'
 
