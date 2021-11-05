@@ -28,3 +28,10 @@ The FAQ page has an accordion to be visually appealing and interactive to the us
                     email they selected of their results.
                     4. Split appointment date and time into two seperate data entry fields in the appointment request form
                     
+### 5/11/2021(Sadie E.)
+* `Logo` in Navbar not clickable for less redundancy between Home and the logo
+    -Navigational bar extended to fit entire page
+* Text added to various pages for users to better understand each page
+    -`Welcome message` added to `sitebase.html`
+    -`FAQ` updated with 10 General Questions and Answers persons may ask
+* `index.html`stores the update for the `Welcome message` that is to be added to the home page(I cannot find page)

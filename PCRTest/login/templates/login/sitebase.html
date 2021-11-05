@@ -14,10 +14,10 @@
 </head>
 <body>
   <!--5/10/2021 SadieEdwards-->
-    <div class="container d-grid gap-3"><!--bootstrap container div tag that sets max-width at each responsive breakpoint and centers it on the page-->
+    <div class="container-fluid"><!--bootstrap container div tag that sets max-width at each responsive breakpoint -->
         <nav class="navbar navbar-expand-lg navbar-dark bg-dark"><!--nav tag having flexbox characteristics and ensuring accessibility to responsive navigation header that collapse at the large breakpoint. navbar-dark to use dark background -->
             <div class="container-fluid"><!--allows for 100% width at all breakpoints-->
-              <a class="navbar-brand" href="#">PCR Appointment System</a><!--clickable link for Name of Website that temporarily returns to nowhere-->
+              <span class="navbar-brand mb-0 h1" >PCR Appointment System</span><!--clickable link for Name of Website that temporarily returns to nowhere-->
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
               </button><!--Use Collapsible plugin used on button div tag for the navbar supported content -->
@@ -69,7 +69,7 @@
             </div>
           </nav>
     </div>
-<!--6/10/21 SadieEdwards of card needs to be fixed -->
+
    
     {% if messages %}
       {% for messages in messages %}

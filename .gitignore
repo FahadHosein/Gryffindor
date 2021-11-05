@@ -1,2 +1,6 @@
 django-env/ 
 PCRTest/djangoenv/
+PCRTest/PCRTest/__pycache__/
+ecng2007/
+PCRTest/login/__pycache__/
+PCRTest/login/migrations/

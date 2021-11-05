@@ -7,6 +7,7 @@
 <head>
     <!--Changed the Title to something more suitable-->
     <title>FAQ</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.0/font/bootstrap-icons.css">
 </head>
 
 <body>
@@ -21,36 +22,132 @@
       <div class="accordion-item">
       <h2 class="accordion-header" id="panelsStayOpen-headingOne">
         <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
-          <strong>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus erat quis consequat laoreet?</strong>
+          <strong class="fst-italic">When should I get tested?</strong>
         </button>
       </h2>
       <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
         <div class="accordion-body">
-          Maecenas quis dui egestas, aliquam orci eu, aliquet augue. Vestibulum elit diam, euismod et massa eget, ullamcorper placerat magna. Fusce pharetra consectetur lacus, id tempus sem consequat ac. Nullam commodo nibh sit amet magna pretium dapibus. Suspendisse quis volutpat turpis. Pellentesque at enim et massa scelerisque viverra. Sed a ultricies ex. Proin elit odio, fringilla pretium lectus vel, aliquam semper tortor. Quisque efficitur nibh vel orci vulputate malesuada. Sed vehicula vel justo eu cursus.
+          If you are experiencing any of these symptoms, even if mild:
+          <ul>
+          <li>A high temperature</li>
+          <li>A new, continuous cough</li>
+          <li>A loss or change of sense of smell or taste</li>
+          </ul> 
+            <div class="alert alert-primary d-flex align-items-center" role="alert">
+              <svg class="bi flex-shrink-0 me-2" width="24" height="24" role="img" aria-label="Info:"><use xlink:href="#info-fill"/></svg>
+            <div> <i class="bi bi-exclamation-circle-fill pe-2"></i>   Stay at home until you receive your test results, otherwise, only leave home to have a test.  </div>
+            </div>
         </div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="panelsStayOpen-headingTwo">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTwo" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
-          <strong>Quisque fermentum porta enim, vitae commodo nunc sagittis sit amet?</strong
+          <strong class="fst-italic">How long does the PCR test take?</strong>
         </button>
       </h2>
       <div id="panelsStayOpen-collapseTwo" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTwo">
         <div class="accordion-body">
-          Praesent eu urna in sapien pharetra euismod. Morbi gravida sit amet orci non viverra. Fusce faucibus nec urna non euismod. Fusce tincidunt in ex eget tincidunt. Sed vehicula arcu efficitur dolor sodales finibus. Proin malesuada pretium ipsum, ac feugiat odio egestas eget. Morbi a varius est. Quisque pellentesque, ex sed commodo condimentum, libero diam fringilla tortor, ac imperdiet erat arcu quis lacus. Curabitur auctor fermentum diam, fringilla condimentum nisi maximus ut. 
+          The PCR test only takes five(5) to ten(10) minutes.
         </div>
       </div>
     </div>
     <div class="accordion-item">
       <h2 class="accordion-header" id="panelsStayOpen-headingThree">
         <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseThree" aria-expanded="false" aria-controls="panelsStayOpen-collapseThree">
-        <strong>Nulla consectetur tellus dui, ultrices laoreet tellus vulputate in?</strong>
+          <strong class="fst-italic">How long do COVID-19 test results take to be processed?</strong>
         </button>
       </h2>
       <div id="panelsStayOpen-collapseThree" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingThree">
         <div class="accordion-body">
-          Mauris bibendum ipsum nec ante ultricies tincidunt. Praesent eget nunc enim. Aliquam quam odio, pulvinar quis efficitur in, bibendum ut lacus. Integer aliquam nunc sapien, ut elementum nulla ornare ac. Etiam laoreet nulla et accumsan lacinia. Vivamus quam nulla, cursus ac pellentesque vel, bibendum id nulla. Nullam interdum, urna vel venenatis tristique, dui mi interdum massa, vitae consectetur nulla neque eu nulla. Nulla augue odio, tincidunt nec imperdiet at, placerat nec ipsum. Sed fringilla laoreet nisl. Quisque ullamcorper ornare purus vel porttitor. Mauris dignissim bibendum justo, vitae varius libero.
+          <li>On average, Clinics that process your results onsite may provide you with your results within hours via email.</li>
+          <li>Clinics may have backlog of tests which may consequently take a week or more to email you your results.</li>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingFour">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFour" aria-expanded="false" aria-controls="panelsStayOpen-collapseTwo">
+          <strong class="fst-italic">Can I take a COVID-19 test because my Job requires it?</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseFour" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFour">
+        <div class="accordion-body">
+          Yes! Simply create an account at this <a class="card-link" href="{% url 'sitehome' %}" >link</a> if not logged in and proceed to the book an Appointment page
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingFive">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFive" aria-expanded="false" aria-controls="panelsStayOpen-collapseFive">
+        <strong class="fst-italic">Are there other reasons to get tested?</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseFive" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingFive">
+        <div class="accordion-body">
+          <li>You have been in contact or within six(6) feet of a person that has COVID-19 or exhibits symptoms.</li>
+          <li>You had a PCR test and your test sample could not be read</li>
+          <li>Sometimes, Test Samples can be misplaced whihc is rare and you may have to return to be tested again.</li>
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingSix">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSix" aria-expanded="false" aria-controls="panelsStayOpen-collapseSix">
+          <strong class="fst-italic">I was not able to book an appointment via the Appointment System , can I still visit the Health center via "walk in" because my Job requires it now?</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseSix" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSix">
+        <div class="accordion-body">
+          Unfortunately no. Many persons like yourself would cause a breach in the COVID-19 health regulations due to the influx entering the health facilty. The website is fast and simple to schedule a PCR appointment. Please click <a class="card-link" href="{% url 'sitehome' %}" >link</a> to book an appointment. 
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingSeven">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSeven" aria-expanded="false" aria-controls="panelsStayOpen-collapseSeven">
+          <strong class="fst-italic">What are the COVID-19 Guidelines and Regulations for Trinidad and Tobago?</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseSeven" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingSeven">
+        <div class="accordion-body">
+          Please click <a class="card-link" href="https://health.gov.tt/covid-19/covid-19-guidelines-and-regulations" >link</a> to be redirected to the Ministry of Health website for further information. 
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingEight">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseEight" aria-expanded="false" aria-controls="panelsStayOpen-collapseEight">
+          <strong class="fst-italic">How do I complete and submit a PCR test form?</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseEight" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingEight">
+        <div class="accordion-body">
+          Once logged in, <a class="card-link" href="{% url 'bookappointment' %}" >Book an Appointment</a>, and the information taken from that form would be your submitted PCR test form.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingNine">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseNine" aria-expanded="false" aria-controls="panelsStayOpen-collapseNine">
+          <strong class="fst-italic">I am not seeing an email indicating available results?</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseNine" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingNine">
+        <div class="accordion-body">
+        This means that your results have not been processed as yet to be sent to you. Kindly, wait one week before you <a class="card-link" href="{% url 'info' %}">contact us</a> via email or telephone. You can also visit the<a class="card-link" href="{% url 'viewresult' %}" >View Your Results</a> to check if your PCR results is available.
+        </div>
+      </div>
+    </div>
+    <div class="accordion-item">
+      <h2 class="accordion-header" id="panelsStayOpen-headingTen">
+        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseTen" aria-expanded="false" aria-controls="panelsStayOpen-collapseTen">
+          <strong class="fst-italic">I need a PCR test within 48-72 hours for Travelling abroad, what should I do?</strong>
+        </button>
+      </h2>
+      <div id="panelsStayOpen-collapseTen" class="accordion-collapse collapse" aria-labelledby="panelsStayOpen-headingTen">
+        <div class="accordion-body">
+        Once logged in, <a class="card-link" href="{% url 'bookappointment' %}" >Book an Appointment</a>, and specify the reasons you are taking the test. The  Health centre staff would place you in a different category.
         </div>
       </div>
     </div>
