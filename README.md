@@ -35,3 +35,6 @@ The FAQ page has an accordion to be visually appealing and interactive to the us
     -`Welcome message` added to `sitebase.html`
     -`FAQ` updated with 10 General Questions and Answers persons may ask
 * `index.html`stores the update for the `Welcome message` that is to be added to the home page(I cannot find page)
+
+
+6/11/2021 - Jared Mohansingh - Cleaned up repository
