@@ -21,6 +21,8 @@
 * Added content for external interface requirements
 * Refined requirements for handling of submissions and admin functionality
 
+
+
 # URS Changelog
 ## Version 0.0
 ### 29/09/2021
@@ -32,6 +34,12 @@
 ### 30/09/2021
 * Added use case diagrams for each user
 * Updated requirements
+
+## Version 1.1
+### 10/10/2021
+* Removed staff user class to align with changes in requirements
+
+
 
 # Risk Management Changelog
 ## Version 0.0
@@ -63,6 +71,12 @@
 ### 10/10/2021
 * Added priorities to risk identification list for clarity
 
+## Version 1.2
+### 31/10/2021
+* Added new risk, and its assessment and mitigation strategies
+
+
+
 # Top 10 Risk List Changelog
 ## Week 3
 ### 03/10/2021
@@ -75,3 +89,32 @@
 ## Week 5
 ### 16/10/2021
 * Updated top ten risk list for week 5
+
+## Week 6
+### 23/10/2021
+* Updated top ten risk list for week 6
+
+## Week 7
+### 30/10/2021
+* Updated top ten risk list for week 7
+
+## Week 8
+### 05/11/2021
+* Updated top ten risk list for week 8
+
+
+
+# Risk Traceability Matrix Changelog
+## Version 0.0
+### 30/09/2021
+* Traceability matrix created
+
+## Version 0.1
+### 07/11/2021
+* Updated requirements progress added requirements status
+
+
+
+# Feature Release Plan Changelog
+* Created feature release plan
+* Drafted releases for the product
