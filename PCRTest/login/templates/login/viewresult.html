@@ -1,0 +1,65 @@
+{%extends "login/sitebase.html" %}
+
+{% block content %}  
+
+<!-- View results on this page, this is an html file. If there are no results here and even if there are , this is supposed to direct the user to book an appointment</h3> -->
+<div class="container text-center fw-light p-5">
+    <h1>View Your Test Results<h1>
+</div>
+
+<div class="container pb-5">
+    {% for appt in appt%}
+
+    {% if user.id == appt.user_id	%}
+
+    <p> Appointment for Mr./Mrs {{appt.fname}} {{appt.lname}} . When asked if they had covid in the past 6 months they said  {{appt.cov6}} </p>
+    <p> When asked if they had heart problems and/or chest pains they said {{appt.heart}} and {{ appt.chestpa }} </p>
+    <p> Their phone number is {{appt.phon}} and their emergency phone contact is {{appt.emephon}}</p>
+
+    {% if appt.apprequest %}
+
+    {% if appt.appconfirmed %}
+
+    {% if appt.tested %}
+
+    {% if appt.result %}
+
+    Your results are ready and have been delivered to {{ user.email }}
+
+    {% else %}
+
+    <p>We are sorry but your results are not ready yet.  </p>
+
+    {% endif %}
+
+    {% else %}
+    <p> Your appointment has been confirmed and is scheduled for {{appt.appdate}} at {{appt.apptime}} </p> 
+    {% endif %}
+
+    {% else %}
+    <p>  We are sorry but your appointment has been denied</p>
+    {% endif %}
+
+    {% else %}
+    <p> Your appointment has not yet been confirmed</p>
+    {% endif %}
+
+
+
+
+
+
+    
+
+    
+    <p> -------------------------------------------------------------------- </p>
+
+    {% else %}
+
+    {% endif %}
+
+    {% endfor %}
+
+</div>
+
+{% endblock content %} 

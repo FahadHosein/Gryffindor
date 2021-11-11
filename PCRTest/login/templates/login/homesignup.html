@@ -1,0 +1,68 @@
+{%extends "login/sitebase.html" %}
+{% load crispy_forms_tags %}
+{% block content %}  
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Changed the Title to something more suitable-->
+    <title>Sign Up</title>
+</head>
+
+{% if user.is_authenticated %}
+         
+<h1> You are already logged in.</h1>
+
+<div>
+<p><b>Welcome</b> to the PCR(Polymerase Chain Reaction) Test Appointment System. As quarantine protocols such as travel and business restictions are being lifted, a test is required to engage in these activities. This website implements fast and simple scheduling of PCR appointments based on your purpose for obtaining a test. This implementation also limits the number of persons entering the facility which helps with adherence to National health regulations and protocols. Please click the book an appointment link below to complete your PCR test form. </p>
+</div>
+<div class="border-top pt-3">
+     
+    <a class="ml-2" href="{% url 'bookappointment' %}"> Click here to book an appointment </a>
+    
+</div>
+<div class="border-top pt-3">
+     
+    <a class="ml-2" href="{% url 'viewresult' %}"> Click here to view your results </a>
+    
+</div>
+<div class="border-top pt-3">
+     
+    <a class="ml-2" href="{% url 'redirlogout' %}"> Click here to log out of your account </a>
+    
+</div>
+
+{% else %}
+<div class="container pt-5 pb-5">
+<p ><b>Welcome</b> to the PCR(Polymerase Chain Reaction) Test Appointment System. As quarantine protocols such as travel and business restictions are being lifted, a test is required to engage in these activities. This website implements fast and simple scheduling of PCR appointments based on your purpose for obtaining a test. This implementation also limits the number of persons entering the facility which helps with adherence to National health regulations and protocols. Sign up by creating an account below to shedule or view an appointment. If you already have an account, please sign in to shedule or view an appointment.</p>
+</div>
+<div class="container text-center p-5">
+    <h1> Create an account</h1>
+</div> 
+<div class="container">
+    <div class="content-section">
+        <form method="POST">
+            {% csrf_token %}
+            <fieldset class="form-group pt-3 pb-3">
+                <legend class="border-bottom mb-4 text-center lead fs-3 pb-2"> Please Make an Account to Book an Appointment </legend>
+                {{ form|crispy }}
+            </fieldset>
+            <div class="d-grid gap-2 col-6 mx-auto pt-3 pb-3">
+                <button class="btn btn-outline-info" type="submit"> Create Account </button>
+            </div>
+        </form>    
+        <div class="border-top pt-3">
+            <small class="text-muted pb-3"> 
+                <strong>Do you already have an account ? <a class="ml-2" href="{% url 'redirlogin' %}"> Sign In Here </a></strong>
+            </small>
+        </div>
+    </div>
+</div>
+                  
+{% endif %}
+
+
+{% endblock content %}
+</html>
+
+
+

@@ -1,0 +1,5 @@
+django-env/ 
+PCRTest/djangoenv/
+PCRTest/PCRTest/__pycache__/
+PCRTest/login/__pycache__/
+PCRTest/login/migrations/

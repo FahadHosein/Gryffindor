@@ -1,0 +1,73 @@
+{%extends "login/sitebase.html" %}
+
+{% block content %}  
+{%load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--Changed the Title to something more suitable-->
+    <title>About Us</title>
+</head>
+
+
+ <!--About Us section starts here-->
+  <div class="container text-center">
+    <div class="container p-5">
+      <h1 class="fw-light">About Us</h1>  
+        <!--Carousel starts here-->
+        <div class="container p-5">
+          <div id="carouselExampleCaptions" class="carousel carousel-dark slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" clas="btn btn-light"data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="{%static 'login/img/lab.jpeg'%}" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block text-light">
+              <!--Photo by <a href="https://unsplash.com/@_louisreed?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Louis Reed</a> on <a href="https://unsplash.com/s/photos/laboratory?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+                <h5>Our Testing Facility</h5>
+                <p>Maecenas odio nibh, porttitor eget elit id, tincidunt elementum nunc. In scelerisque nulla at pharetra consequat.</p>
+              </div>
+            </div>
+            <!--Photo by <a href="https://unsplash.com/@cdc?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">CDC</a> on <a href="https://unsplash.com/s/photos/coronavirus?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>-->
+            <div class="carousel-item">
+              <img src="{%static 'login/img/virus.jpeg'%}" class="d-block w-100" >
+              <div class="carousel-caption d-none d-md-block">
+                <h5>COVID-19 Virus</h5>
+                <p>Nulla facilisi. Morbi vestibulum scelerisque iaculis. Curabitur at sodales sapien, quis tincidunt nisi. Donec ut pellentesque elit.</p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <img src="{%static 'login/img/doc.jpeg'%}" class="d-block w-100">
+              <div class="carousel-caption d-none d-md-block">
+                <h5>Our Team</h5>
+                <p>Ut blandit pellentesque lorem, eget ultrices nunc. Phasellus et nisl fermentum, posuere nisi nec, maximus massa. Phasellus ut vestibulum dui. Aliquam sit amet arcu eros.</p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div> 
+      </div>
+      <div class="container pt-3 text-justify"> 
+        <h5><a href="{% url 'sitehome' %}" class="text-decoration-none">Click here</a> to get started.</h5>
+      </div>
+  </div>
+
+{% endblock content %} 
+
+ <!-- This is the bootstrap JS-->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
+
