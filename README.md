@@ -41,5 +41,6 @@ The FAQ page has an accordion to be visually appealing and interactive to the us
 
 ### 10/11/2021(Sadie E.)
 * Text added to various pages for users to better understand each page
-    -`Welcome message` added to `homesignup.html`
-    -`covidadvisories.html` updated with information by WHO and Trinidad and Tobago's COVID-19 advisories
+    * -`Welcome message` added to `homesignup.html`
+    * -`covidadvisories.html` updated with information by WHO and Trinidad and Tobago's COVID-19 advisories
+    * -`viewresult.html` updated for easy viewing by users

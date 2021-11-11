@@ -4,7 +4,7 @@
 
 <!-- View results on this page, this is an html file. If there are no results here and even if there are , this is supposed to direct the user to book an appointment</h3> -->
 <div class="container text-center fw-light p-5">
-    <h1>View Your Test Results<h1>
+    <h1>View your Appointments<h1>
 </div>
 
 <div class="container pb-5">
@@ -12,9 +12,12 @@
 
     {% if user.id == appt.user_id	%}
 
-    <p> Appointment for Mr./Mrs {{appt.fname}} {{appt.lname}} . When asked if they had covid in the past 6 months they said  {{appt.cov6}} </p>
-    <p> When asked if they had heart problems and/or chest pains they said {{appt.heart}} and {{ appt.chestpa }} </p>
-    <p> Their phone number is {{appt.phon}} and their emergency phone contact is {{appt.emephon}}</p>
+    <p> Appointment for Mr./Mrs <mark>{{appt.fname}} {{appt.lname}}</mark> </p>
+    <p> Had covid in the past 6 months:  <mark>{{appt.cov6}} </mark></p>
+    <p> Heart Problems: <mark>{{appt.heart}} </mark> </p>
+    <p> Chest pains:   <mark>{{ appt.chestpa }} </mark></p>
+    <p> Contact number: <mark>{{appt.phon}} </mark></p>
+    <p> Emergency contact number: <mark>{{appt.emephon}}</mark></p>
 
     {% if appt.apprequest %}
 
@@ -24,11 +27,11 @@
 
     {% if appt.result %}
 
-    Your results are ready and have been delivered to {{ user.email }}
+    Your appointment has been sent to {{ user.email }}
 
     {% else %}
 
-    <p>We are sorry but your results are not ready yet.  </p>
+    <p>We are sorry but your results are not ready as yet.  </p>
 
     {% endif %}
 
