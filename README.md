@@ -32,9 +32,14 @@ The FAQ page has an accordion to be visually appealing and interactive to the us
 * `Logo` in Navbar not clickable for less redundancy between Home and the logo
     -Navigational bar extended to fit entire page
 * Text added to various pages for users to better understand each page
-    -`Welcome message` added to `sitebase.html`
     -`FAQ` updated with 10 General Questions and Answers persons may ask
 * `index.html`stores the update for the `Welcome message` that is to be added to the home page(I cannot find page)
 
 
 6/11/2021 - Jared Mohansingh - Cleaned up repository
+
+
+### 10/11/2021(Sadie E.)
+* Text added to various pages for users to better understand each page
+    -`Welcome message` added to `homesignup.html`
+    -`covidadvisories.html` updated with information by WHO and Trinidad and Tobago's COVID-19 advisories
