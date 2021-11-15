@@ -44,3 +44,7 @@ The FAQ page has an accordion to be visually appealing and interactive to the us
     * -`Welcome message` added to `homesignup.html`
     * -`covidadvisories.html` updated with information by WHO and Trinidad and Tobago's COVID-19 advisories
     * -`viewresult.html` updated for easy viewing by users
+
+### 15/11/2021(Sadie E.)
+* `bookappointment.html` updated with additional questions
+* `models.py` updated variables due to added questions on `bookappointment.html` page
