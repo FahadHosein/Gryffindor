@@ -6,12 +6,16 @@
 
 10/18/2021 - refer to the comments in the commit , 
 
-10/19/2021- "Ok so now the website has basic navigation functionality and the feel that you are actually logged in . Rn if you create your account it prompts you to log into the account that you just created , this is kinda bad but its not necessary that it be fixed. There is still no  real book appointment option , and the view results doesnt really work weeither , its just a for loop showing the first and last name 
-of all appointments made . Dev plan as of right now is to get the appointment system working , then the view result system working , then maybe a staff page(not admin page)" - Jared
+## 10/19/2021- Jared M.
+* Website allows navigation around website
+* Create account allows user to create account and then log in.
+* Book appointmentr does not work, view results does not show appointments, only allows user to see first and last names of appointments
 
 
-10/28/2021 - The book appointment page now has an appointment form that can be filled out and submitted. The viewresults page allows you to see the booked appointment and the date+time as well as all the other information that you submitted in the form. It does not allow you to delete or update/change the appointment in any way . The date+time selector is very difficult to use on the bookappointment page . It definitely needs a better entry method . The phone number entry fields could use some checcks as well. There is still no staff page and the admin page still has the word django on it .
--Jared 
+## 10/28/2021 - Jared M
+* Book appointment page can alllow user to create entry in table ,(makes appointment)
+* View rersult page allows user to see all information submitted by the user in the form
+
 
 ### 31/10/21 (Suveer R.)
 * Created Covid-19 Advisory, About Us (infopage.html) and FAQ Pages
