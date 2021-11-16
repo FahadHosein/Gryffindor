@@ -125,7 +125,7 @@ STATICFILES_DIRS = (str(BASE_DIR.joinpath('static')),) # new
 
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
 
-LOGIN_REDIRECT_URL= 'viewresult'
+LOGIN_REDIRECT_URL= 'viewappointments'
 
 LOGIN_URL = 'accounterror'
 

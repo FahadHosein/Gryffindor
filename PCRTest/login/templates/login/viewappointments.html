@@ -13,9 +13,6 @@
     {% if user.id == appt.user_id	%}
 
     <p> Appointment for Mr./Mrs <mark>{{appt.fname}} {{appt.lname}}</mark> </p>
-    <p> Had covid in the past 6 months:  <mark>{{appt.cov6}} </mark></p>
-    <p> Heart Problems: <mark>{{appt.heart}} </mark> </p>
-    <p> Chest pains:   <mark>{{ appt.chestpa }} </mark></p>
     <p> Contact number: <mark>{{appt.phon}} </mark></p>
     <p> Emergency contact number: <mark>{{appt.emephon}}</mark></p>
 
@@ -27,7 +24,7 @@
 
     {% if appt.result %}
 
-    Your appointment has been sent to {{ user.email }}
+    The results of your PCRTest is ready for pickup at the Testing Facility. Ensure to walk with a valid form of Government-issued ID.
 
     {% else %}
 
@@ -47,14 +44,6 @@
     <p> Your appointment has not yet been confirmed</p>
     {% endif %}
 
-
-
-
-
-
-    
-
-    
     <p> -------------------------------------------------------------------- </p>
 
     {% else %}
@@ -64,5 +53,12 @@
     {% endfor %}
 
 </div>
+
+<div> 
+
+<p> Do you need another appointment ? Book your appointment by clicking <a class="ml-2" href="{% url 'bookappointment' %}"> here </a> </p>
+
+</div>
+
 
 {% endblock content %} 

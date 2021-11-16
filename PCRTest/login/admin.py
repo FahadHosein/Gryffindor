@@ -7,6 +7,9 @@ admin.site.site_header = 'PCR Testing Facility Admin Website'
 
 @admin.register(appt)
 class apptadmin(admin.ModelAdmin):
-    list_display = ('appdate','apptime','apprequest','appconfirmed','tested','result','covnow')
-    ordering = ('appdate',)
-    list_filter = ('apprequest','appconfirmed','tested','result','covnow')
+    
+    list_display = ('requesttime','appdate','apptime','fname','lname','apprequest','appconfirmed','tested','result')
+    search_fields = ('fname','lname')
+    ordering = ('-requesttime',)
+    list_filter = ('apprequest','appconfirmed','tested','result')
+    
