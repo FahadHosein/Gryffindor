@@ -48,3 +48,11 @@ The FAQ page has an accordion to be visually appealing and interactive to the us
 ### 15/11/2021(Sadie E.)
 * `bookappointment.html` updated with additional questions
 * `models.py` updated variables due to added questions on `bookappointment.html` page
+
+### 16/11/2021(Jared M.)
+* All instancees to view `viewresult` were changed to `viewappointment`
+* `models.py` updated variables to remove fields that were not needed
+* Converted book appointment view in `views.py` to use a form in `forms.py` instead of the raw fields as described in the view
+* Changed account creation form to use a datepicker instead of a raw text input field to enter the date
+* Added a button in the bottom of teh view appointments page to allow user to make an appointment if there are no appointments already made 
+
