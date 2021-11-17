@@ -1,11 +1,12 @@
+
 from django.test import SimpleTestCase
 from django.urls import reverse, resolve
-from login.views import sitehome #,redirlogin, redirlogout, info, accounterror, faq, advisories 
+from login.views import sitehome 
 
 
 class TestUrls(SimpleTestCase):
-
-   def test_sitehome_url_is_resolved(self):
-      url = reverse('sitehome')
-       print(resolve(url))
+   
+ def test_sitehome_url_is_resolved(self):
+       url = reverse('sitehome')
+       self.assertEquals(resolve(url).func, sitehome)
        
