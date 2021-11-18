@@ -73,3 +73,8 @@ email they selected of their results.
 * Changed account creation form to use a datepicker instead of a raw text input field to enter the date
 * Added a button in the bottom of teh view appointments page to allow user to make an appointment if there are no appointments already made 
 
+
+## 18/11/2021
+### Jared Mohansingh
+* Fixed the bug where creating an account with a username that already exists will break the website
+
