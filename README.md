@@ -79,3 +79,6 @@ email they selected of their results.
 * Fixed the bug where creating an account with a username that already exists will break the website
 * Changed dob to DateOfBirth and reset the database. Admin account changed
 
+## 18/11/2021
+### Jared Mohansingh
+* Fixed some dead links in the FAQ page
