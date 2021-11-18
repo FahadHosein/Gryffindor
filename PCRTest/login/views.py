@@ -20,7 +20,7 @@ def sitehome(request):
             return redirect('redirlogin')
     else:
         form = UserRegistrationForm() 
-        return render(request, 'login/homesignup.html', {'form' : form})
+    return render(request, 'login/homesignup.html', {'form' : form})
 
 
 
