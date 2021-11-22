@@ -21,6 +21,10 @@
 * Added content for external interface requirements
 * Refined requirements for handling of submissions and admin functionality
 
+## Version 1.1
+### 12/11/2021
+* Removed and modified requirements for staff user class to correspond to the scope reduction request
+
 
 
 # URS Changelog
