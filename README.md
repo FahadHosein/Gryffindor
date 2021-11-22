@@ -39,7 +39,18 @@
 ### 10/10/2021
 * Removed staff user class to align with changes in requirements
 
+# Version Control Scheme Changelog
+## Version 0.0
+### 21/09/2021
+* Drafted introduction
+* Suggested software version control scheme
+* Suggested document version control scheme
 
+## Version 1.0
+### 30/09/2021
+* Completed introduction
+* Completed application version control section
+* Completed document version control section
 
 # Risk Management Changelog
 ## Version 0.0
