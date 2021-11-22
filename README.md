@@ -7,7 +7,7 @@
 | **SUM**    | 28         | 234        | 87         | 906        |
 
 
-# Changelog
+# Application Changelog
 
 ## 16/09/21
 ### Fahad Hosein
@@ -17,20 +17,20 @@
 ### Jared Mohansingh
 * Test Commit
 
-## Version 0.0
+## Version_0.0
 ### 10/19/2021
 ### Jared Mohansingh
 * Website allows navigation around website
 * Create account allows user to create account and then log in.
 * Book appointmentr does not work, view results does not show appointments, only allows user to see first and last names of appointments
 
-## Version 0.1
+## Version_0.1
 ### 10/28/2021
 ### Jared Mohansingh
 * Book appointment page can alllow user to create entry in table ,(makes appointment)
 * View rersult page allows user to see all information submitted by the user in the form
 
-## Version 0.2
+## Version_0.2
 ### 31/10/21
 ### Suveer Ramsamaroo
 * Created Covid-19 Advisory, About Us (infopage.html) and FAQ Pages
@@ -39,7 +39,8 @@ Additions were made to the `url.py` and `views.py` to accommodate the new pages.
 The About Us page, has a carousel which can be utilized in the future to contain anchor tags to take the user to various parts of the website. Currently the visiblity of the text is low due to the colours of the pictures and text, this would be changed in the future.
 The FAQ page has an accordion to be visually appealing and interactive to the user. 
 
-## Version 1.0: Release 1
+# *Release 1*
+## Version_1.0
 ### 11/1/2021 
 ### Jared Mohansingh
 * The book appointment page has better headings for the form entry but still no calendar and clock to select the appointment time to request 
@@ -50,7 +51,7 @@ results are positivbe or not the website will indicate that, in the future, the 
 email they selected of their results.
 * Split appointment date and time into two seperate data entry fields in the appointment request form
 
-## Version 1.1            
+## Version_1.1            
 ### 5/11/2021
 ### Sadie Edwards
 * `Logo` in Navbar not clickable for less redundancy between Home and the logo
@@ -64,7 +65,7 @@ email they selected of their results.
 ### Jared Mohansingh
 * Cleaned up repository
 
-## Version 1.2
+## Version_1.2
 ### 10/11/2021
 ### Sadie Edwards
 * Text added to various pages for users to better understand each page
@@ -72,13 +73,14 @@ email they selected of their results.
 * `covidadvisories.html` updated with information by WHO and Trinidad and Tobago's COVID-19 advisories
 * `viewresult.html` updated for easy viewing by users
 
-## Version 1.3
+## Version_1.3
 ### 15/11/2021
 ### Sadie Edwards
 * `bookappointment.html` updated with additional questions
 * `models.py` updated variables due to added questions on `bookappointment.html` page
 
-## Version 2.0: Release 2
+# *Release 2*
+## Version 2.0
 ### 16/11/2021
 ### Jared Mohansingh
 * All instancees to view `viewresult` were changed to `viewappointment`
