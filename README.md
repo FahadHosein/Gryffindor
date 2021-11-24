@@ -128,6 +128,13 @@
 ### 05/11/2021
 * Updated top ten risk list for week 8
 
+## Week 9
+### 12/11/2021
+* Updated top ten risk list for week 9
+
+## Week 10
+### 18/11/2021
+* Updated top ten risk list for week 10
 
 
 # Risk Traceability Matrix Changelog
