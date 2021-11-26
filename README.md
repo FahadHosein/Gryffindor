@@ -101,6 +101,10 @@
 ### 31/10/2021
 * Added new risk, and its assessment and mitigation strategies
 
+## Version 1.3
+### 31/10/2021
+* Updated format of document
+* Added new mitigation strategies
 
 
 # Top 10 Risk List Changelog
